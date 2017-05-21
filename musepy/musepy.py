@@ -84,7 +84,7 @@ def moments(cube_fits, line_values, line_names, moment, save_file=False):
     """
 
 
-    print line_values, line_names
+    print(line_values, line_names)
     cube=SpectralCube.read(cube_fits)
 
     for line,stri in zip(line_values,line_names):
@@ -181,7 +181,7 @@ def overheads(NPT, DIT, NDIT):
 
     """
     ov = 360. + 120. + NPT*NDIT*(DIT + 80. + 15.)
-    print 'Telescope time in h = ', ov/3600.
+    print('Telescope time in h = ', ov/3600.)
 
 
 def subcube(cube_fits, region,  save_file=False, filename=''):
